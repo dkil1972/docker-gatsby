@@ -1,3 +1,8 @@
+#Use this dockerfile if you have an existing gatsby site
+#and just want an environment to run gatsby development
+#copy this and the compose file innto the root fo your gatsby
+#directory, then docker-compose up
+
 FROM node:alpine
 
 # Also exposing VSCode debug ports
