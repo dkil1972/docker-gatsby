@@ -8,7 +8,7 @@ FROM node:alpine
 # Also exposing VSCode debug ports
 EXPOSE 8000 9000 9929 9230
 
-RUN apk add --no-cache python make g++ \
+RUN apk add --no-cache python make g++ git \
  && apk add vips-dev fftw-dev build-base \
         --update-cache \
         --repository https://alpine.global.ssl.fastly.net/alpine/edge/community \
